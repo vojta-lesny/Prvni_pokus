@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmf0hkwk5gi8e"]
+
+[ext_resource type="PackedScene" uid="uid://b33ewams57x45" path="res://Modely/Věci/hory.tscn" id="1_btxlm"]
+[ext_resource type="PackedScene" uid="uid://3sf3i456enab" path="res://Postavy/hrac.tscn" id="2_bdcxk"]
+
+[node name="level_1" type="Node3D"]
+
+[node name="hory" parent="." instance=ExtResource("1_btxlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.502056, 0, 1.0718)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27.6747, 0)
+
+[node name="Hrac" parent="." instance=ExtResource("2_bdcxk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.96088, 2.67336, 8.63463)

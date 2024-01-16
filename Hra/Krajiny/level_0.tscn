@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://4o16i4tnnm14"]
+
+[ext_resource type="PackedScene" uid="uid://b0ewo71vw7rty" path="res://Modely/Věci/betonovadeska.tscn" id="1_lg3mq"]
+[ext_resource type="PackedScene" uid="uid://fcptudal0mk4" path="res://Modely/Věci/cervenyvalec.tscn" id="2_x1baf"]
+[ext_resource type="PackedScene" uid="uid://3sf3i456enab" path="res://Postavy/hrac.tscn" id="3_p52xf"]
+
+[sub_resource type="Environment" id="Environment_mnm7q"]
+ambient_light_color = Color(0.690196, 0.435294, 0.831373, 1)
+ambient_light_energy = 14.15
+
+[node name="Level0" type="Node3D"]
+
+[node name="Krajina" type="Node3D" parent="."]
+
+[node name="betonovadeska" parent="Krajina" instance=ExtResource("1_lg3mq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69175, 4.76837e-07, -0.985693)
+
+[node name="cervenyvalec" parent="Krajina" instance=ExtResource("2_x1baf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7581, 1.48093, 21.5194)
+
+[node name="cervenyvalec2" parent="Krajina" instance=ExtResource("2_x1baf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.19952, 1.31217, 23.6075)
+
+[node name="cervenyvalec3" parent="Krajina" instance=ExtResource("2_x1baf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1781, 1.48093, 26.1049)
+
+[node name="cervenyvalec4" parent="Krajina" instance=ExtResource("2_x1baf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61948, 1.31217, 28.193)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mnm7q")
+
+[node name="Hrac" parent="." instance=ExtResource("3_p52xf")]
+transform = Transform3D(-0.915368, 0, 0.402619, 0, 1, 0, -0.402619, 0, -0.915368, 0, 1.5, -25)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.997687, -0.00500494, 0.0677851, -0.0677851, -0.1467, 0.986856, 0.00500494, -0.989168, -0.1467, 0, 45.8932, 0)
+light_energy = 2.939
+light_indirect_energy = 4.717
+light_volumetric_fog_energy = 4.232
+light_angular_distance = 31.82

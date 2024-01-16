@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://3sf3i456enab"]
+
+[ext_resource type="Script" path="res://Postavy/hrac.gd" id="1_4akrd"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_126dj"]
+
+[node name="Hrac" type="CharacterBody3D"]
+script = ExtResource("1_4akrd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_126dj")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79299, -0.908952)

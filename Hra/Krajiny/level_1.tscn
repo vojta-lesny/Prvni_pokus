@@ -12,4 +12,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.502056, 0, 1.0718)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27.6747, 0)
 
 [node name="Hrac" parent="." instance=ExtResource("2_bdcxk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.96088, 2.67336, 8.63463)
+transform = Transform3D(0.253235, 0, 0.967405, 0, 1, 0, -0.967405, 0, 0.253235, -1.96088, 2.67336, 8.63463)
